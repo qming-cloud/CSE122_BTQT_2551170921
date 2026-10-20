@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bài 29 - Bảng dữ liệu và Phân trang</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main class="container py-5">
+            <div class="bg-white p-3 p-md-4 rounded shadow-sm">
+                <h1 class="h3 mb-4">Danh sách sinh viên</h1>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover align-middle">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">Mã SV</th>
+                                <th scope="col">Họ và tên</th>
+                                <th scope="col">Lớp</th>
+                                <th scope="col" class="text-center">Điểm</th>
+                                <th scope="col">Trạng thái</th>
+                            </tr>
+                        </thead>
+                        <tbody id="student-list"></tbody>
+                    </table>
+                </div>
+                <nav aria-label="Phân trang sinh viên">
+                    <ul class="pagination justify-content-center mb-0">
+                        <li class="page-item" id="previous">
+                            <button
+                                class="page-link"
+                                type="button"
+                                onclick="changePage(currentPage - 1)"
+                                aria-label="Trang trước"
+                            >
+                                «
+                            </button>
+                        </li>
+                        <li class="page-item page-number">
+                            <button class="page-link" type="button" onclick="changePage(1)">
+                                1
+                            </button>
+                        </li>
+                        <li class="page-item page-number">
+                            <button class="page-link" type="button" onclick="changePage(2)">
+                                2
+                            </button>
+                        </li>
+                        <li class="page-item page-number">
+                            <button class="page-link" type="button" onclick="changePage(3)">
+                                3
+                            </button>
+                        </li>
+                        <li class="page-item" id="next">
+                            <button
+                                class="page-link"
+                                type="button"
+                                onclick="changePage(currentPage + 1)"
+                                aria-label="Trang sau"
+                            >
+                                »
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </main>
+        <script src="java.js"></script>
+    </body>
+</html>

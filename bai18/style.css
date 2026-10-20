@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333333;
+    line-height: 1.6;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-container {
+    max-width: 680px;
+    width: 100%;
+    background-color: #fdfbf7;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.article-header {
+    margin-bottom: 20px;
+}
+
+.main-title {
+    color: #E65100;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.sub-title {
+    color: #E65100;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+.article-body {
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.flower-img {
+    float: right;
+    max-width: 220px;
+    height: auto;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.paragraph {
+    text-align: justify;
+    font-size: 14.5px;
+    margin-bottom: 14px;
+    color: #222222;
+}
+
+.drop-cap::first-letter {
+    float: left;
+    font-size: 48px;
+    line-height: 38px;
+    padding-top: 2px;
+    padding-right: 8px;
+    color: #E65100;
+    font-weight: bold;
+}
+
+.taste-box {
+    border: 1.5px solid #2E7D32;
+    background-color: #f4fbf4;
+    padding: 18px 24px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.taste-title {
+    color: #2E7D32;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.food-list {
+    columns: 2;
+    column-gap: 20px;
+}
+
+.food-item {
+    font-size: 13px;
+    margin-bottom: 8px;
+    color: #222222;
+    break-inside: avoid;
+    background-image: url('Bai18/icon_list_c.gif');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 20px;
+}

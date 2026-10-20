@@ -1,0 +1,19 @@
+body {
+    padding: 12px;
+    background: #f8f9fa;
+}
+
+.container {
+    width: 94%;
+    max-width: 1320px;
+}
+
+main {
+    padding-top: 48px;
+    padding-bottom: 72px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}

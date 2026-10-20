@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    color: #333333;
+    line-height: 1.5;
+    padding: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.page-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.banner {
+    background-color: #C62828;
+    background-image: url('Bai21/Nen_banner.jpg');
+    background-position: center;
+    padding: 15px 20px;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    height: 35px;
+    width: auto;
+}
+
+.site-title {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main-layout {
+    display: flex;
+    align-items: stretch;
+    min-height: 480px;
+}
+
+.sidebar-menu {
+    width: 200px;
+    flex-shrink: 0;
+    background: linear-gradient(to bottom, #C62828, #8E0000);
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item {
+    display: block;
+    padding: 12px 15px;
+    color: #ffffff;
+    font-size: 13px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.2s;
+}
+
+.menu-item:hover,
+.menu-item.active {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.content-title {
+    color: #C62828;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.sub-menu-box {
+    background-color: #FFE082;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+
+.sub-menu-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.sub-menu-list a {
+    color: #333333;
+}
+
+.sub-menu-list a:hover {
+    color: #C62828;
+    text-decoration: underline;
+}
+
+.bullet {
+    color: #333333;
+}
+
+.content-card {
+    background-color: #FFFFFF;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 30px 20px;
+    min-height: 180px;
+}
+
+.intro-text {
+    font-size: 13px;
+    color: #333333;
+    margin-bottom: 25px;
+}
+
+.center-info {
+    text-align: center;
+}
+
+.org-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 4px;
+}
+
+.welcome-text {
+    font-size: 13px;
+    color: #333333;
+}
+
+.sidebar-ads {
+    width: 160px;
+    flex-shrink: 0;
+    padding: 15px 10px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.ad-img {
+    width: 100%;
+    max-width: 140px;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .main-layout {
+        flex-direction: column;
+    }
+
+    .sidebar-menu,
+    .sidebar-ads {
+        width: 100%;
+    }
+
+    .sidebar-ads {
+        flex-direction: row;
+        justify-content: center;
+    }
+}

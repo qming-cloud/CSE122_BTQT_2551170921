@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 25 - Trang du lịch với Navbar và Grid</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">CSE.TLU Travel</a>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#home">Trang chủ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#destinations">Điểm đến</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tours">Tour</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Liên hệ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container" id="home">
+        <header class="bg-white rounded shadow-sm p-5 text-center mb-4">
+            <h1 class="display-5 fw-bold text-primary">Khám phá Việt Nam</h1>
+            <p class="fs-5 mb-4">Hành trình qua những kỳ quan thiên nhiên đẹp nhất đất nước.</p>
+            <a class="btn btn-primary btn-lg" href="#tours">Đặt tour ngay</a>
+        </header>
+        <section id="destinations" aria-label="Điểm đến">
+            <div class="row g-4" id="tours">
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm">
+                        <img src="Bai25/1-vinh-ha-long.jpg" class="card-img-top" alt="Vịnh Hạ Long">
+                        <div class="card-body">
+                            <h2 class="card-title h5">Vịnh Hạ Long</h2>
+                            <p>Gần 2.000 đảo đá vôi, Di sản thiên nhiên thế giới.</p>
+                            <button class="btn btn-outline-primary btn-sm" type="button">Xem thêm</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm">
+                        <img src="Bai25/3-thac-ban-gioc.jpg" class="card-img-top" alt="Thác Bản Giốc">
+                        <div class="card-body">
+                            <h2 class="card-title h5">Thác Bản Giốc</h2>
+                            <p>Thác nước đẹp nhất Việt Nam, nằm ở Cao Bằng.</p>
+                            <button class="btn btn-outline-primary btn-sm" type="button">Xem thêm</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm">
+                        <img src="Bai25/4-fansipan.jpg" class="card-img-top" alt="Fansipan">
+                        <div class="card-body">
+                            <h2 class="card-title h5">Fansipan</h2>
+                            <p>“Mái nhà Đông Dương”, cao 3.147 m, thuộc Lào Cai.</p>
+                            <button class="btn btn-outline-primary btn-sm" type="button">Xem thêm</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contact" class="bg-dark text-white text-center py-3">
+        <small>CSE.TLU - ChimCanhCut - 0868600513</small>
+    </footer>
+</body>
+</html>
