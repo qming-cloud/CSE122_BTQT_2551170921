@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 12 - In lịch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <section class="calendar" id="calendar" aria-live="polite">
+      <p class="calendar-year" id="calendar-year"></p>
+      <p class="calendar-month" id="calendar-month"></p>
+      <p class="calendar-day" id="calendar-day"></p>
+      <p class="calendar-weekday" id="calendar-weekday"></p>
+    </section>
+
+    <p class="greeting" id="greeting"></p>
+
+    <form class="form" id="calendar-form">
+      <div class="form-group">
+        <label class="form-label" for="input-day">Ngày</label>
+        <input class="form-input" type="number" id="input-day" min="1" max="31" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="input-month">Tháng</label>
+        <input class="form-input" type="number" id="input-month" min="1" max="12" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="input-year">Năm</label>
+        <input class="form-input" type="number" id="input-year" min="1" required>
+      </div>
+      <button class="form-button" type="submit">In lịch</button>
+    </form>
+  </main>
+
+  <script src="java.js"></script>
+</body>
+</html>
